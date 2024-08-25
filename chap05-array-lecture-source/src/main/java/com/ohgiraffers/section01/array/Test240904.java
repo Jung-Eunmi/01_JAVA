@@ -21,10 +21,11 @@ public class Test240904 {
                 String[] sarr = {"딸기", "바나나", "복숭아", "키위", "사과"};
                 System.out.println(sarr[num]);
 
-            } else {
-                System.out.println("준비된 과일이 없습니다.");
-            }
+            } else{
 
+                System.out.println("준비된 과일이 없습니다.");
+
+            }
 
         }
 

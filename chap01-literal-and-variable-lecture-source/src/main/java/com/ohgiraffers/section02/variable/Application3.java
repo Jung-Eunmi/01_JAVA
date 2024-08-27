@@ -3,6 +3,7 @@ package com.ohgiraffers.section02.variable;
 public class Application3 {
 
     public static void main(String[] args) {
+
         // 1 tap(키) 4칸 띄어쓰기
         /* 수업목표. 변수의 명명 규칙에 대해 이해할 수 있다. */
         /* 필기.
@@ -66,5 +67,6 @@ public class Application3 {
         /* 목차 2-7. boolean 형들은 의문문으로 가급적이면 긍정형태로 작성한다. */
         boolean isDead = false; // 죽었니?라는 부정형태가 아닌
         boolean isAlive = true; // 살았니?라는 긍정형태로 작성 해야한다.
+
     }
 }

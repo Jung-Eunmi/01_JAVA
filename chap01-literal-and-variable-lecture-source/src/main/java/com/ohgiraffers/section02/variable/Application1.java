@@ -3,6 +3,7 @@ package com.ohgiraffers.section02.variable;
 public class Application1 {
 
     public static void main(String[] args) {
+
      /* 수업목표. 변수의 사용 목적에 대해 이해할 수 있다. */
      /* 필기.
      *   변수의 사용 목적
@@ -55,5 +56,6 @@ public class Application1 {
         System.out.println("sum 에 10을 더한 2번 째 sum = " + sum);
         sum = sum + 10;
         System.out.println("sum 에 10을 더한 3번 째 sum = " + sum);
+
     }
 }

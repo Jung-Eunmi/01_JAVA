@@ -3,6 +3,7 @@ package com.ohgiraffers.section02.variable;
 public class Application2 {
 
     public static void main(String[] args) {
+
         /* 수업목표. 변수를 선언하고, 값을 할당하여 사용할 수 있다. */
         /* 필기.
          *   변수를 사용하는 방법
@@ -72,5 +73,6 @@ public class Application2 {
         str = "안녕하세요";
 
         // 대표 자료형 : 정수 = int , 실수 = double 이 대표 자료형이다.(실수는 정확한 값으로 길기 때문에 double이 많이 쓰임)
+
     }
 }

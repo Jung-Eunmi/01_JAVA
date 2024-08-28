@@ -34,6 +34,6 @@ public class Application1 {
         System.out.println("result3 = " + result3);
         System.out.println("result4 = " + result4);
         System.out.println("result5 = " + result5);
-        
+
     }
 }

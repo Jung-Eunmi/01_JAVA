@@ -16,7 +16,7 @@ public class Application8 {
         *   클래스명.메소드명();
         * */
 
-        Application8.sumTwoNumbers(10,20);
+        Application8.sumTwoNumbers(10,20);  //동일한 클래스 내에 작성 된 static 메소드는 클래스명이 생략 가능하다.
 
         System.out.println(Application8.sumTwoNumbers(10,20));
 

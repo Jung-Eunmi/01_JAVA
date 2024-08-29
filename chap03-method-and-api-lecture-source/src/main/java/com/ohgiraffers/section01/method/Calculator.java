@@ -17,6 +17,6 @@ public class Calculator {
         return (frist > second)? frist : second;
     }
 
-    
+
 
 }

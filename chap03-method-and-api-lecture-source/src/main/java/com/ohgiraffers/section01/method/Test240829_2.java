@@ -27,8 +27,6 @@ public class Test240829_2 {
     public void stuScore (String name,int lanScore,int engScore,int mathScore){
         System.out.println(name+" 국어:"+lanScore+"  영어:"+engScore+"  수학:"+mathScore);
     }
-    public int l
-    
 
 
 

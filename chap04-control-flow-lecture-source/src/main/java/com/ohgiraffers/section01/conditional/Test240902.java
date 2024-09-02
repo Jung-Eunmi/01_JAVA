@@ -3,7 +3,7 @@ package com.ohgiraffers.section01.conditional;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Test {
+public class Test240902 {
 
     public void diet(){
 

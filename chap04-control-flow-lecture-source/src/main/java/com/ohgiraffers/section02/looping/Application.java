@@ -6,8 +6,8 @@ public class Application {
 
 //        A_for a = new A_for();
 //        a.testSimpleForStatement();
-        A_for b = new A_for();
-        b.testForExample1();
+//        A_for b = new A_for();
+//        b.testForExample1();
 
 
 

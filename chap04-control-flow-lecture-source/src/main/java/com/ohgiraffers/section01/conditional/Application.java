@@ -27,9 +27,11 @@ public class Application {
 //
 //        D_switch h = new D_switch();
 //        h.testSwitchStatement();
-
-        D_switch i = new D_switch();
-        i.testSwitchVendingMachine();
+//
+//        D_switch i = new D_switch();
+//        i.testSwitchVendingMachine();
+        Test a = new Test();
+        a.diet();
 
 
 

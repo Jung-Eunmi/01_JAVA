@@ -13,19 +13,19 @@ public class Test {
         Random random = new Random();
         int chicken = random.nextInt(2);
 
-        if(num>70){
+        if(num>70) {
             System.out.println("샐러드를 먹어야겠다.");
-            if(chicken>0) {
-                System.out.println("ggh");
+        }
+        else{
+            if(chicken == 0) {
+                System.out.println("치킨을 먹어야겠다.");
 
             }
-        } else {
-            System.out.println("라면을 먹어야겠다.");
+            else {
+                System.out.println("라면을 먹어야겠다.");
+            }
         }
 
-
-
     }
-
 
 }

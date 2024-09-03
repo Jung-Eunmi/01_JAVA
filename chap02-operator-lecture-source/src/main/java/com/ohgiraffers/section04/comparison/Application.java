@@ -44,7 +44,7 @@ public class Application {
         // ==, != 이건 가능하지 않을까?
         // > , < 이건 가능할까?
         System.out.println("ch1 > ch2 : " + (ch1 > ch2));
-        // comment. 문자는 내부적으로 숫자로 처리가 되기 때문에 대소비교가 가능하다.
+        // comment. 문자는 내부적으로 숫자로 처리가 되기 때문에 (==,!=,>,<)대소비교가 가능하다.
 
         /* index 3. 문자열값 비교 */
         String str1 = "조평훈";

@@ -175,16 +175,16 @@ public class Test240902 {
 
         if (average >= 60 && sincerity >= 40 && service >= 40 && smile >= 40) {
             System.out.println("합격입니다.");
-        } else if (sincerity < 40) {
+        } else if(average<60) {
+            System.out.println ("평균 점수 미달로 불합격입니다.");
+            } if (sincerity < 40) {
             System.out.println("성실 항목의 점수 미달로 불합격 입니다.");
-        } else if (service < 40) {
+            } if (service < 40) {
             System.out.println("서비스 항목의 점수 미달로 불합격 입니다.");
-        } else if (smile < 40) {
-            System.out.println("미소 항목의 점수 미달로 불합격 입니다.");
-        } else {
-            System.out.println("평균 점수 미달로 불합격입니다.");
-        }
-
+            } if (smile < 40) {
+                System.out.println("미소 항목의 점수 미달로 불합격 입니다.");
+            }
     }
 
-    }
+}
+

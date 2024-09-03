@@ -7,9 +7,9 @@ public class Application {
 //        a.testBreakStatement();
 //        a.breakGugudan();
         B_continue b = new B_continue();
-        b.testContinueStatement();
-
-
+//        b.testContinueStatement();
+//        b.testContinueStatement2();
+        b.test1();
     }
 
 }

@@ -117,9 +117,6 @@ public class B_nestedFor {
             System.out.println();
         }
 
-
-
     }
-
 
 }

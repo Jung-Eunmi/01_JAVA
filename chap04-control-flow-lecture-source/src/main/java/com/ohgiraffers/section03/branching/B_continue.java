@@ -22,12 +22,17 @@ public class B_continue {
                 continue;
             }
 
-
         }
-
 
     }
 
+    public void testContinueStatement2() {
+        /* index.
+        *   2 ~ 9 단의 구구단을 출력 할 것이다.
+        *   단, 수가 5인 경우만 출력하지 않을 것이다.
+        * */
+
+    }
 
 
 

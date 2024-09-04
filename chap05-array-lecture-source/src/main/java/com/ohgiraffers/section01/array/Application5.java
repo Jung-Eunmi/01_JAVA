@@ -20,10 +20,11 @@ public class Application5 {
         System.out.println("당신이 뽑은 카드는 " + shapes[randomShapesIndex]+" " +
                 cardNumbers[randomCardNumbersIndex] + "카드 입니다.");
 
-        // test 점심 메뉴 고르기
-        String[] menu = {""}
+        // test 점심에 뭐 먼저 먹을지 정하기
+        String[] menu = {"race","kimch","water","kuk"};
 
-
+        int randomMenu = (int)(Math.random()*menu.length);
+        System.out.println("뭐 먼저 먹을래 :" + menu[randomMenu]);
 
     }
 

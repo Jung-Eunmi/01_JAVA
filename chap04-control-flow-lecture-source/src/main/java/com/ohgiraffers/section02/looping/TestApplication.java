@@ -8,7 +8,11 @@ public class TestApplication {
 //        a.test2();
 //        a.test3();
 //        a.test4();
-        a.test5();
+//        a.test5();
+//        a.test6();
+        a.test7();
+
+
     }
 
 }

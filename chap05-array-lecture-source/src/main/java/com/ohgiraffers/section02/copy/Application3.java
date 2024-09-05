@@ -1,5 +1,7 @@
 package com.ohgiraffers.section02.copy;
 
+import java.util.Arrays;
+
 public class Application3 {
 
     public static void main(String[] args) {
@@ -19,12 +21,61 @@ public class Application3 {
         *   2. Object 의 clone() 메소드를 이용한 값 복사
         *   3. System 의 arraycopy() 메소드를 이용한 값 복사
         *   4. Array 의 copyOf() 메소드를 이용한 값 복사
+        *   이 중 가장 높은 성능을 보이는 것은 순수 배열의 복사를 위해 만들어진 arraycopy() 메소드이며,
+        *   가장 많이 사용되는 방식은 copyOf() 메소드이다.
+        *   clone() 은 이전 배열과 같은 길이의 배열 밖에 만들지 못하는 특징이 있으며,
+        *   그 외 3가지 방법은 복사하는 배열의 길이를 조절할 수 있다는 장점이 있다.
         * */
 
+        int[] originArr = new int[] {1, 2, 3, 4, 5};
+
+        print(originArr);
+
+        /* index 1. for 문을 이용한 인덱스 값 복사 */
+        int[] copyArr1 = new int[10];
+
+        for (int i = 0; i<originArr.length; i++){
+            copyArr1[i] = originArr[i];
+        }
+
+        print(copyArr1);
+
+        /* index 2. Object 의 Clone() 을 이용한 값 복사 */
+        int[] copyArr2 = originArr.clone();
+
+        print(copyArr2);
+
+        /* index 3. System 의 arraycopy() 를 이용한 값 복사 */
+        int[] copyArr3 = new int[10];
+
+        /* 전달인자
+        *   1. 원본배열(originArr)
+        *   2. 복사를 시작 할 인덱스
+        *   3. 복사본 배열(copyArr3)
+        *   4. 복사를 시작 할 인덱스
+        *   5. 복사할 길이 */
+        System.arraycopy(originArr, 0, copyArr3, 3, originArr.length);
+
+        print(copyArr3);
+
+        /* index 4. Arrays 의 copyOf() 메소드를 이용한 복사 (이것만 기억해도 됨) */
+
+        /* 전달인자
+        *   1. 복사하고 싶은 배열(originArr)
+        *   2. 만들고 싶은 배열의 길이 */
+        int[] copyArr4 = Arrays.copyOf(originArr, 8);
+
+        print(copyArr4);
         
+    }
+    public static void print(int[] 전달받은배열을저장할매개변수){
 
+        System.out.println("전달 받은 배열의 hashCode() : " + 전달받은배열을저장할매개변수.hashCode());
 
-
+        for(int i = 0; i<전달받은배열을저장할매개변수.length; i++){
+            System.out.print(전달받은배열을저장할매개변수[i] + " ");
+        }
+        System.out.println();
 
     }
 

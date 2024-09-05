@@ -66,7 +66,7 @@ public class Application3 {
         int[] copyArr4 = Arrays.copyOf(originArr, 8);
 
         print(copyArr4);
-        
+
     }
     public static void print(int[] 전달받은배열을저장할매개변수){
 

@@ -1,14 +1,11 @@
-package com.ohgiraffers.section02.encapsulation.problem3;
+package com.ohgiraffers.section02.encapsulation.resolve;
 
 public class Monster {
 
-    /* index 1. name hp */
-//    String name;
-//    int hp;
+    /*  */
 
-    /* index 2. 또 마음이 바뀌었다.. 이름이 아니라 또 종류래요.. */
-    String kinds;
-    int hp;
+    private  String kinds;
+    private int hp;
 
     public void setName(String name){
         this.kinds = name;

@@ -6,7 +6,6 @@ public class Application {
 
         /* title. 필드에 직접 접근하는 경우 발생할 수 있는 문제(3) */
 
-
         // 여기서는 problem1 을 적용 -> 메소드를 통해 값 입력
         // 1번 몬스터 생성
         Monster monster1 = new Monster();

@@ -48,7 +48,7 @@ public class Application {
         String str = sc.nextLine();
 
         for(int i = 0; i<str.length(); i++){
-        System.out.println(i+"문자 : " + str.charAt(i));}
+        System.out.println((i+1)+"문자 : " + str.charAt(i));}
 
 
 

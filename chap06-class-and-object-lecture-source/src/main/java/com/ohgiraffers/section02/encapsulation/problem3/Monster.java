@@ -13,7 +13,7 @@ public class Monster {
     public void setName(String name){
         this.kinds = name;
     }
-
+    // int hp = -200
     public void setHp(int hp){
 
         if (hp>0){

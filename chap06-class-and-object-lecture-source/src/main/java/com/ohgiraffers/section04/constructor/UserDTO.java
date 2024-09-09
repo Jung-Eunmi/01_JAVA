@@ -31,8 +31,50 @@ public class UserDTO {
     *       인스턴스 생성 시점에 수행 할 코드(주로 필드 초기화)
     *       this.필드명 = 매개변수
     *   }
+    *   생성자 작성 시 주의점!!!
+    *   1. 생성자 메소드는 반드시!!!!! 클래스의 이름과 동일해야 한다. (대/소문자까지)
+    *   2. 생성자 메소드는 반환형을 작성하지 않는다. (작성 시에는 생성자가 아닌 메소드로 인식)
     * */
 
+    /* index 1. 기본 생성자 */
+    public UserDTO() {
+        System.out.println("UserDTO 의 기본생성자 호출됨...");
+    }
 
+    // 동일한 이름을 가진 생성자 혹은 메소드를 하나의 클래스 안에서 작성하는 건 불가능
+//    public UserDTO() {}
 
+    /* index 2. 매개변수가 있는 생성자 */
+    public UserDTO(String id, String pwd, String name) {
+        /* comment.
+        *   id, pwd, name 초기화를 담당하는 생성자
+        *   - 분명 동일한 이름을 사용했지만, 컴파일 오류가 발생하지 않는다.
+        *   - 매개변수 선언부에 작성한 매개변수의 타입, 갯수, 순서에 따라
+        *     동일한 이름을 가진 생성자 혹은 메소드를 여러 개 작성할 수 있다는 뜻이다.
+        *   - 오버로딩(overLoading)
+        * */
+        this.id = id;
+        this.pwd = pwd;
+        this.name = name;
+        System.out.println("UserDTO 의 매개변수가 있는 생성자 호출함...");
+    }
+
+    /* index 3. 모든 필드를 초기화하는 생성자 */
+    public UserDTO(String id, String pwd, String name, LocalDateTime enrollDate) {
+        this.id = id;
+        this.pwd = pwd;
+        this.name = name;
+        this.enrollDate = enrollDate;
+        System.out.println("모든 필드를 초기화하는 생성자 호출됨...");
+    }
+
+    @Override
+    public String toString() {
+        return "UserDTO{" +
+                "id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", enrollDate=" + enrollDate +
+                '}';
+    }
 }

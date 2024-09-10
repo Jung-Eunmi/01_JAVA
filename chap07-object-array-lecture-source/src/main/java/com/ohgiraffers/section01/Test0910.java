@@ -20,13 +20,15 @@ public class Test0910 {
         double score = sc.nextDouble();
         System.out.println();
 
-        if(mOrF=='M'){
-            System.out.print("남학생");
+        if(mOrF == 'M'){
+
+            mOrF = '남';
+
         }else{
-            System.out.print("여학생");
+            mOrF = '여';
         }
 
-        System.out.println(grade+"학년"+classNum+"반"+name+mOrF+"의 성적은"+score+"입니다.");
+        System.out.println(grade+"학년"+classNum+"반"+name+ " " +  mOrF+"의 성적은"+score+"입니다.");
 
 
     }

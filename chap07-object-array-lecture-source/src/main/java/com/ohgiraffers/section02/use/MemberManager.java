@@ -20,6 +20,7 @@ public class MemberManager {
         //회원 등록에 특화된 직원
         MemberInsertManager insertManager = new MemberInsertManager();
         insertManager.insert(members);
+
     }
 
     public void searchAllMember() {

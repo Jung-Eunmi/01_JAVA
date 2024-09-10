@@ -37,8 +37,18 @@ public class Application {
         /* comment. 명시적으로 초기값을 작성하면 기본값 -> 명시적 초기값으로 덮어쓴다. */
         System.out.println(product.getInfo());
 
+        /* index 3. 초기화 블럭으로 필드 초기화 확인 */
+        System.out.println(product.getInfo());
 
+        /* index 4. 매개변수가 있는 생성자를 이용한 초기화 확인 */
+        Product product2 = new Product("대륙폰",300000,"샤우미");
+        System.out.println(product2.getInfo());
 
+        /* comment. 정보처리기사 시험에서 알면 좋은 포인트! 알아만두기
+        *   여기서는 알 수 있는 초기화 순서는
+        *   인스턴스 변수 : 기본값 -> 명시적 초기값 -> 인스턴스 초기화 블럭 -> 생성자
+        *   클래스 변수 : 기본값 -> 명시적 초기값 -> 정적초기화블럭 -> 인스턴스초기화블럭 -> 생성자
+        * */
     }
 
 }

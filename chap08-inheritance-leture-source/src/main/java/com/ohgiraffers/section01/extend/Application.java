@@ -70,6 +70,10 @@ public class Application {
         /* comment. 상속은 물려받는 것 뿐만 아니라 확장도 할 수 있다. */
         fireCar.sprayWater();
 
+        System.out.println("============================================");
+
+        /* index 4. 경운기 만들기 -> 경적이 없는 차 */
+        FarmCar farmCar = new FarmCar();
 
     }
 

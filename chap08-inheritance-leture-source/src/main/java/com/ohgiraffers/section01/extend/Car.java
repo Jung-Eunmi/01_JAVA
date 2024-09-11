@@ -32,7 +32,8 @@ public class Car {
 
     }
 
-    private boolean isRunning() {
+    // protected 접근 제한자로 같은 패키지 내에 있는 클래스에서는 사용할 수 있게 접근 범위 확장
+    protected boolean isRunning() {
 
         // 주행 상태를 반환하는 기능
         return runningStatus;

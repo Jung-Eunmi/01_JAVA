@@ -60,10 +60,60 @@ public class Test0910 {
 //        }else {
 //            System.out.println("불합격");
 //        }
-
-
-
-
+        // 문제 4 키보드로 정수 두 개를 입력 받아 각각 변수(num1, num2)에 저장하세요.
+        //그리고 또 다른 정수를 입력 받아 그 수가 num1 이하거나 num2 초과이면 true를 출력하고 아니면 false를 출력하세요.
+        //(단, num1은 num2보다 작아야 함)
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("첫 번째 정수를 입력하세요 : ");
+//        int num1 = sc.nextInt();
+//        System.out.print("두 번째 정수를 입력하세요 : ");
+//        int num2 = sc.nextInt();
+//        System.out.print("값을 비교할 정수를 입력하세요 : ");
+//        int no = sc.nextInt();
+//
+//        boolean a = (no<=num1 || no> num2)?true:false;
+//        System.out.println(a);
+        // 문제 5 3개의 수를 키보드로 입력 받아 입력 받은 수가 모두 같으면 true, 아니면 false를 출력하세요.
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("첫 번째 정수를 입력하세요 : ");
+//        int num1 = sc.nextInt();
+//        System.out.print("두 번째 정수를 입력하세요 : ");
+//        int num2 = sc.nextInt();
+//        System.out.print("세 번째 정수를 입력하세요 : ");
+//        int num3 = sc.nextInt();
+//
+//        boolean a = (num1==num2 && num2==num3)?true:false;
+//        System.out.println(a);
+        // 문제 6 A, B, C 사원의 연봉을 입력 받고 각 사원의 연봉과 인센티브를 포함한 연봉을 계산하여 출력하고
+        // 인센티브 포함 급여가 3000만원 이상이면 “3000 이상”, 미만이면 “3000 미만”을 출력하세요.
+        //(A 사원의 인센티브는 0.4, B 사원의 인센티브는 없으며, C 사원의 인센티브는 0.15)
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print("첫 번째 정수를 입력하세요 : ");
+//        int num1 = sc.nextInt();
+//        System.out.print("두 번째 정수를 입력하세요 : ");
+//        int num2 = sc.nextInt();
+//        System.out.print("세 번째 정수를 입력하세요 : ");
+//        int num3 = sc.nextInt();
+//
+//        int[] salary = {num1,num2,num3};
+//        double peopleA = salary[0]+(salary[0]*0.4);
+//        double peopleB = salary[1];
+//        double peopleC = salary[2]+(salary[2]*0.15);
+//
+//
+//        if(peopleA>=3000){
+//            System.out.println("A사원의 연봉은 : " + peopleA +"이고, 3000 이상입니다.");
+//        }else if (peopleB>=3000) {
+//            System.out.println("B사원의 연봉은 : " + peopleB +"이고, 3000 이상입니다.");
+//        }else if (peopleC>=3000) {
+//            System.out.println("A사원의 연봉은 : " + peopleC +"이고, 3000 이상입니다.");
+//        }else{
+//            System.out.println("3000만원 이하입니다.");
+//        }
+//
+//
+//
+//
 
 
 

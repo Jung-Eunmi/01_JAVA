@@ -17,14 +17,15 @@ public class Application {
         *   2. 자바가 가진 단일상속의 단점을 극복할 수 있다.(다중 상속 가능)
         * */
 
+        // 인터페이스도 인스턴스를 생성할 수 없다.
+//        InterfaceProduct interfaceProduct = new InterfaceProduct();
 
+        // 다형성을 이용해서 자식 타입의 인스턴스로 사용할 수 있다.
+        InterfaceProduct interfaceProduct = new Product();
 
-
-
-
-
-
-
+        // 동적 바인딩을 통해 오버라이딩 된 메소드로 호출이 된다.
+        interfaceProduct.nonStaticMethod();
+        
     }
 
 }

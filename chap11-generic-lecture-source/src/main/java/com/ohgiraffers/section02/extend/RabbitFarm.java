@@ -25,4 +25,5 @@ public class RabbitFarm<T extends Rabbit> {
     public void setAnimal(T animal) {
         this.animal = animal;
     }
+
 }

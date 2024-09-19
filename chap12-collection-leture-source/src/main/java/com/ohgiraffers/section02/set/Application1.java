@@ -52,7 +52,6 @@ public class Application1 {
         while (iter.hasNext()){
             System.out.println(iter.next());
         }
-        
-    }
+            }
 
 }

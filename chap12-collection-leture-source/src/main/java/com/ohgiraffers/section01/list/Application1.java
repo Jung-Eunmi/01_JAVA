@@ -1,11 +1,8 @@
 package com.ohgiraffers.section01.list;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
-public class Application {
+public class Application1 {
 
     public static void main(String[] args) {
 
@@ -124,20 +121,38 @@ public class Application {
         
         /* comment.
         *   정렬 기능도 사용할 수 있다.
-        *   저장 순서를 유지하고 있는 stringList 를 오름차순 정렬
-        * */
-
+        *   저장 순서를 유지하고 있는 stringList 를 오름차순 정렬 */
         Collections.sort(stringList);
         System.out.println("stringList = " + stringList);
-        
 
+        /* comment.
+        *   조금 복잡하지만, 내림차순 정렬도 가능하다.
+        *   하지만 ArrayList 에서는 내림차순 정렬을 제공하지 않고
+        *   List 의 또 다른 구현체인 LinkedList 에서 제공을 한다. */
+        // List<Sting> stringList = new LinkedList<>(stringList);
+        stringList = new LinkedList<>(stringList);
 
+        /* comment.
+        *   Iterator(반복자) 란?
+        *   Collection 인터페이스의 iterator() 메소드를 이용해서 인스턴스를 생성할 수 있다.
+        *   컬렉션에서 값을 읽어오는 방식을 통일된 방식으로 제공하기 위해 사용
+        *   반복자라고 불리우며, 반복문을 통해서 값을 하나씩 꺼내기 위한 용도이다.
+        *   인덱스로 관리되는 컬렉션이 아닌 경우는 반복문을 사용해서 요소에 접근할 수
+        *   없기 때문에 인덱스를 사용하지 않고도 반복문을 쓰기 위한 목록을 만들어주는 역할이라고 보면된다.
+        *   hasNext() : 다음 요소를 가지고 있으면 true, 없으면 false
+        *   next() : 다음 요소 반환 */
 
+        Iterator<String> dIter = ((LinkedList<String>)stringList).descendingIterator();
 
+        /* comment.
+        *   dIter 라는 레퍼런스 변수에 내림차순 한 결과를 담았기 때문에
+        *   다시 한 번 ArrayList 로 옮길 것이다. */
+        List<String> descList = new ArrayList<>();
+        while (dIter.hasNext()){
+            descList.add(dIter.next());
+        }
 
-
-
-
+        System.out.println("descList = " + descList);
 
     }
 

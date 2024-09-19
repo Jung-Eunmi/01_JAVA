@@ -40,16 +40,12 @@ public class Application3 {
 
         System.out.println("pop() : " + integerStack.pop());
         System.out.println("integerStack = " + integerStack);
-        
-
-
-
-
-
-
-
-
-
+        System.out.println("pop() : " + integerStack.pop());
+        System.out.println("pop() : " + integerStack.pop());
+        System.out.println("pop() : " + integerStack.pop());
+        System.out.println("pop() : " + integerStack.pop());
+//        System.out.println("pop() : " + integerStack.pop()); 값이 없는데 pop 을 더 하면 런타임 오류가 난다.
+        System.out.println("integerStack = " + integerStack);
 
     }
 

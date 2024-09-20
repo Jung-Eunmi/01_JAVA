@@ -20,7 +20,7 @@ public class Application1 {
 //            et.checkEnoughMoney(3000, -5000);
             // 물건의 가격이 가진 돈 보다 큼
             et.checkEnoughMoney(10000, 5000);
-            
+
         } catch (PriceNegativeException e) {
             throw new RuntimeException(e);
         } catch (MoneyNegativeException e) {
@@ -28,7 +28,6 @@ public class Application1 {
         } catch (NotEnoughMoneyException e) {
             throw new RuntimeException(e);
         }
-
 
     }
 

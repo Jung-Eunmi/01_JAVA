@@ -2,7 +2,7 @@ package com.ohgiraffers.section01.exception;
 
 public class Application1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         /* title. 예외에 대해 이해하고 이를 처리하기 위한 문법 이용 */
 
@@ -41,12 +41,17 @@ public class Application1 {
         *   내가 가진 돈이 50,000원 인 경우,
         *   반대로 내가 가진 돈이 10,000원 인 경우 */
 
+        /* comment.
+        *   check 메소드에서 throws 를 했더니 호출 한 Application 에서 오류가 발생했다.
+        *   그것은 throws 는 자신을 호출한 곳에서 예외를 처리하라고 강제화를 걸었다는 의미이다.
+        * */
+
         // 상품 30000원 , 가진 돈 50000원
         et.checkEnoughMoney(30000, 50000);
+        // 상품 30000원 , 가진 돈 10000원
+        et.checkEnoughMoney(30000,10000);
 
         System.out.println("프로그램을 종료합니다.");
-
-
 
     }
 

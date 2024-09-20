@@ -28,7 +28,7 @@ public class Application {
          *   3. 출력 후 Scanner 객체를 사용해 입력한 값을 ArrayList 에 넣어 출력하라.
          *  */
         
-        List<BookDTO> list = new ArrayList();
+        List<BookDTO> list = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         System.out.print("책번호를 입력 : ");
         int no = sc.nextInt();

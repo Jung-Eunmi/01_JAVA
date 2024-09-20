@@ -1,7 +1,6 @@
 package com.ohgiraffers.section03.map;
 
-import java.util.Date;
-import java.util.HashMap;
+import java.util.*;
 
 public class Application1 {
 
@@ -55,10 +54,30 @@ public class Application1 {
         hmap.remove(12);
         System.out.println("hmap = " + hmap);
 
-        
-        
+        // 저장 된 객체 수 확인 size() 메소드
+        System.out.println("hmap 에 저장 된 객체 수 : " + hmap.size());
 
+        // 다형성을 적용하여 HashMap 만들기
+        // 제네릭 까지 적용
+        Map<String,String> hmap2 = new HashMap<>();
+        hmap2.put("one", "java");
+        hmap2.put("two", "mysql");
+        hmap2.put("three", "jdbc");
+        hmap2.put("four", "mybatis");
+        hmap2.put("five", "jpa");
 
+        /* index 1. keySet() 을 이용해서 키만 따로 Set 으로 만들고, iterator() 로 목록 만들기 */
+        Set<String> keySet = hmap2.keySet(); // map -> set 방식으로 바뀜
+        Iterator<String> keyIter = keySet.iterator(); // Map -> Set -> iterator 방식으로 바뀜
+
+        /* index 2. Iterator 에서 제공하는 hasNext(), next() 메소드 사용해서 반복문 */
+        while (keyIter.hasNext()){
+            String key = keyIter.next();
+            String value = hmap2.get(key);
+            System.out.println(key);
+            System.out.println(value);
+            System.out.println(key + " = " + value);
+        }
 
     }
 

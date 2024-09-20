@@ -27,7 +27,7 @@ public class Application2 {
 
         System.out.println("prop = " + prop);
 
-        // 예외처리 -> 파일의 입력과 출력에 대한 것은 예외처리를 강제화 해두었다.
+        // 예외처리 -> 파일의 입력과 출력에 대한 것은 예외처리를 강제화 해두었다.(오류를 잡아내기위해서 필요)
         try {
             prop.store(new FileOutputStream("driver.dat"),"jdbc driver"); //OutPut : 내보내기
             prop.store(new FileWriter("driver.txt"),"jdbc driver");  //Writer : 쓰다
@@ -51,7 +51,7 @@ public class Application2 {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        
+
     }
     
 }

@@ -1,0 +1,44 @@
+package com.ohgiraffers.section02.stream;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Application4 {
+
+    public static void main(String[] args) {
+
+        /* title. FileWriter 를 이해하고 사용할 수 있다. */
+
+        /* comment.
+        *   프로그램의 데이터를 내보내기 위한 스트림
+        *   FileOutputStream 과 차이점은 글자(Character) 단위로 데이터를 처리한다.
+        * */
+
+        FileWriter fw = null;
+
+        try {
+
+            fw = new FileWriter("src/com/ohgiraffers/section02/stream/testWriter.txt");
+
+            fw.write(97);
+            fw.write('A');
+            fw.write(new char[] {'a', 'p', 'p', 'l', 'e'});
+            fw.write("하이미디어아카데미");
+
+
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if(fw != null) {
+                try {
+                    fw.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+
+    }
+
+}

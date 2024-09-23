@@ -32,6 +32,12 @@ public class Application4 {
         } finally {
             if(fw != null) {
                 try {
+
+                    /* comment.
+                    *   close() 메소드는 닫기 전에
+                    *   flush() 라는 메소드를 실행 시키고 닫게 된다.
+                    *    flush 란?
+                    *     - 통로에 남아있는 잔류 데이터를 밀어준다라고 생각하면 된다. */
                     fw.close();
                 } catch (IOException e) {
                     throw new RuntimeException(e);

@@ -33,6 +33,11 @@ public class Application {
         System.out.println("파일의 상위경로 : " + file.getParent());
         System.out.println("파일의 절대경로 : " + file.getAbsolutePath());
 
+        // 파일의 삭제
+        boolean isDelete = file.delete();
+
+        System.out.println("isDelete = " + isDelete);
+
     }
 
 }

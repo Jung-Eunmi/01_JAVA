@@ -31,7 +31,15 @@ public class BookManager {
 
     }
 
-    public void displayAll() {}
+    public void displayAll() {
+        if(list.size()==0){
+            System.out.println("조회결과가 없습니다.");
+        }else {
+            for(int i = 0; i<list.size(); i++){
+                System.out.println(list.get(i));
+            }
+        }
+    }
 
     public void printBookList(List<BookDTO> printList) {}
 

@@ -23,6 +23,7 @@ public class BookMenu {
             System.out.println("5. 끝내기 ");
             System.out.print("메뉴 번호 선택 : ");
             int no = sc.nextInt();
+            sc.nextLine();
 
             switch (no) {
 
@@ -58,27 +59,25 @@ public class BookMenu {
 
     public BookDTO inputBook() {
 
-        System.out.print("도서 제목 : ");
-        String bookTitle = sc.nextLine();
-        sc.nextLine();
         System.out.print("도서 장르 (1:인문 / 2:자연과학 / 3:의료 / 4:기타) : ");
         int categoryNum = sc.nextInt();
         sc.nextLine();
+        System.out.print("도서 제목 : ");
+        String bookTitle = sc.nextLine();
         System.out.print("도서 저자 : ");
         String bookAuthor = sc.nextLine();
-        sc.nextLine();
 
         return new BookDTO(categoryNum, bookTitle, bookAuthor);
     }
 
     public int inputBookNo() {
-        System.out.println("도서 번호 : ");
+        System.out.print("도서 번호 : ");
 
         return sc.nextInt();
     }
 
     public String inputBookTitle() {
-        System.out.println("도서 제목 : ");
+        System.out.print("도서 제목 : ");
 
         return sc.nextLine();
     }
